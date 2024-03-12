@@ -4,3 +4,54 @@
     margin: 0;
     padding: 0;
 }
+/*Header pagina 1 */
+.encabezado{
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: var(--color-secundary);
+    border: 1px solid red;
+
+}
+.encabezado__titulo{
+    color: var(--color-primary);
+    border: 1px solid red;
+}
+
+.encabezado__menu{
+    display: flex;
+    width: 40%;
+    border: 1px solid red;
+    justify-content: space-around;
+}
+.encabezado__menu a{
+    color: var(--color-white);
+    text-decoration: none;
+    border: 1px solid red;
+    
+}
+/*fin Header pagina 1  */
+
+
+
+/*Comienzo cuerpo texto-img pagina 1  */
+.textopagina1{
+    display: flex;
+    width: 100%;
+    height: vh;
+    border: 1px solid green;
+}
+.textopagina1__texto{
+    border: 1px solid red;
+    
+}
+.textopagina1__img{
+    display: flex;
+    height: 15rem;
+    object-fit: contain;
+    border: 1px solid red;
+
+}
+/*Fin cuerpo texto-img pagina 1  */
