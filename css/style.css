@@ -264,5 +264,84 @@ body{
 
 
 /*Comienzo pagina 4*/
+.pagina4{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid red; */
+    flex-direction: column;
+    align-items:center ;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.pagina4__text{
+    display: flex;
+    width: 100%;
+   height: 30vh;
+   justify-content: center;
+   flex-direction: column;  
+    /* border: 1px solid yellow; */
+}
+.pagina4__text small{
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+.pagina4__text p{
+    margin-top: 1rem;
+    font-size: 2.8rem;
+    color: var(--color-white);
+    
+    
+}
+.pagina4__img{
+    display: flex;
+    /* border: 1px solid rgb(17, 0, 255); */
+    justify-content: center;
+    flex-direction: row;
+    
+    width: 100%;
+    height: 70%;
+    
+}
+.pagina4__img .img__elemento__pag4:hover{
+    scale: 1.1;
+}
+.pagina4__img .img__elemento__pag4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 29%;
+    height: 80%;
+    color: var(--color-primary);
+    /* border: 1px solid rgb(255, 0, 234); */
+    
+}
+.img__elemento__pag4 img{
+    display: flex;
+    width: 55%;
+    height: 70%;
+    align-items: center;
+    align-self: center;
+    object-fit:contain;
+    /* border: 1px solid yellow; */
 
+}
+
+.pagina4__img h5{
+    font-weight: 500;
+    font-size: 1.5rem;
+    
+}
+
+.img__elemento__pag4 p{
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    
+    color: var(--color-white);
+    line-height: 2rem;
+}
 /*FIN pagina 4*/
+
+
+/*Comienzo pagina 5*/
+/*Fin pagina 5*/
