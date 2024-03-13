@@ -396,3 +396,79 @@ body{
     scale: 1.1;
 }
 /*Fin pagina 5*/
+
+
+/*Comienzo Footer*/
+.pagina6{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    /* border: 1px solid red; */
+    justify-content: center;
+    gap: 2rem ;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+}
+.pagina6__text{
+    display: flex;
+    width: 15%;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    margin-top: 1rem;
+}
+
+.pagina6__text a{
+    
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    line-height: 0.2rem;
+
+}
+.pagina6__text a:hover{
+    color: var(--color-primary);
+}
+.pagina6__text i{
+    display: flex;
+    font-size: 2rem;
+    /* border: 1px solid red; */
+    flex-direction: row;
+    margin-top: 1.5rem;
+    line-height: 0.2rem;
+    color: var(--color-white);
+
+}
+
+.linea{
+    font-size: 1.7rem;
+    position: relative;
+    text-decoration: none;
+    color: var(--color-white);
+    
+    display: inline-block;
+}
+
+.linea::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    
+    left: 0%; /* Alinea el inicio del subrayado en la mitad de la palabra */
+    width: 70%; /* Define la longitud del subrayado */
+    height: 2px; /* Grosor del subrayado */
+    background-image: linear-gradient(to left, transparent 50%, #ff702a 50%); /* Gradiente para crear el subrayado */
+   
+}
+
+.pagina6__icons{
+    display: flex;
+    gap: 5px;
+}
+.pagina6__icons:hover{
+    
+    scale: 1.1;
+}
+
+
+/*Fin Footer*/
