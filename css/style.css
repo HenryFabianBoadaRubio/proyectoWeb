@@ -94,7 +94,7 @@ body{
     line-height: 1.7rem;
     color: var(--color-white);
 }
-.textopagina1__texto h3{
+.textopagina1__texto button{
     display: flex;
     text-align: center;
     width: 10rem;
@@ -104,11 +104,79 @@ body{
     background-color: var(--color-primary);
     margin-top: 2rem;
     cursor: pointer;
+    font-size: 1.2rem;
     color: var(--color-white);
 }
-.textopagina1__texto h3:hover{
+.textopagina1__texto button:hover{
     background-color:var(--color-white) ;
     color: var(--color-primary);
+    scale: 1.1;
 }
 
 /*Fin cuerpo texto-img pagina 1  */
+
+
+
+/*Comienzo pagina 2*/
+.pagina2{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid red; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+}
+.pagina2__img{
+    display: flex;
+    width: 50%;
+    height: 75vh;
+    object-fit: contain;
+    justify-content: center;
+    align-self: center;
+    /* border: 1px solid red; */
+
+}
+.pagina2__text{
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+.pagina2__text small{
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    
+}
+.pagina2__text h4{
+    margin-top: 0.5rem;
+    font-size: 3.5rem;
+    line-height: 3.7rem;
+    color: var(--color-white);
+    font-weight:500;
+}
+.pagina2__text p{
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    color: var(--color-white);
+    line-height: 2rem;
+}
+.pagina2__text button{
+    display: flex;
+    text-align: center;
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    margin-top: 1.5rem;
+}
+.pagina2__text button:hover{
+    background-color:var(--color-white) ;
+    color: var(--color-primary);
+    scale: 1.1;
+}
+
+/*Fin pagina 2*/
