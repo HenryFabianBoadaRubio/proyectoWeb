@@ -1,16 +1,20 @@
 @import url(variables.css);
 
+
+
+
 *{
     margin: 0;
     padding: 0;
 }
 body{
+    
     display: grid;
     width: 100%;
     height: 100vh;
     grid-template-columns: 1fr 4fr;
     border: 1px solid red;
-    background-color: aqua;
+    background-color: #1a1a1a;
     flex-direction: row;
 }
 
@@ -20,6 +24,8 @@ body{
     height: 100vh;
     flex-direction: column;
     border: 1px solid red;
+    font-family: "Handlee";
+   
     
 }
 .pagina1__tittle{
@@ -27,21 +33,34 @@ body{
     height: 15%;
     align-items: center;
     justify-content: center;
+    color: white;
+    font-family: "Protest Revolution";
+    font-size: 2rem;
+    
 }
 .pagina1__aside__1{
+    margin-top: 2rem;
     display: flex;
     height: 50%;
     align-items: center;
-    justify-content: space-around;
+    line-height: 4.5rem;    
     flex-direction: column;
-    border: 1px solid red;
-    
+    font-size: 1.5rem;
+    border: 1px solid rgb(217, 255, 0);
+    align-items: baseline;
+    margin-left: 4rem;
 
+}
+.pagina1__aside__1 i{
+    font-size: 2.5rem;
 }
 .pagina1__aside__2 .elemento,
 .pagina1__aside__1 .elemento{
     text-decoration: none;
+    color: white;
+
 }
+
 
 .pagina1__aside__2{
     display: flex;
@@ -50,7 +69,23 @@ body{
     justify-content: space-evenly;
     flex-direction: column;
     border: 1px solid red;
+    font-size: 1.5rem;
+    align-items: baseline;
+    margin-left: 4rem;
 }
+.pagina1__aside__2 i{
+    font-size: 2.5rem;
+    
+}
+.pagina1__aside__2 p{
+    display: flex;
+    width: 100%;
+    color: white;
+    justify-content: center;
+    
+    border: 1px solid red;
+}
+
 /*FIN ASIDE PAGINA 1*/
 
 
@@ -61,17 +96,24 @@ body{
     margin-left: 2rem;
     width: 95%;
     height: 85%;
-    background-color: blueviolet;
+    color: white;
+    border: 1px solid red;
+    
+    background-color:#333333;
+
     flex-direction: column;
     border-radius: 20px;
 }
-.pagina1__main__tittle{
-    position: absolute;
+.container h2{
     border: 1px solid rgb(255, 251, 0);
-    width: 100%;
+    font-family: "Handlee";
+    font-size: 3rem;
+
+    margin: 10px;
 }
+
 .pagina1__main{
-    margin-top: 2rem;
+    
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-auto-rows: 20rem;
@@ -80,13 +122,22 @@ body{
     gap: 20px;
     overflow-y: auto;
     border: 1px solid rgb(255, 251, 0);
-    background-color: rgb(201, 53, 53);
+    background-color:#333333;
+
+    
     position: relative;
     
 }
 .main__elemento{
     display: flex;
+    
     border-radius: 20px;
     background-color: aliceblue;
 }
 /*FIN MAIN PAGINA 1*/
+
+
+
+/*ABRIGOS COMIENZO PAGINA 2*/
+
+/*ABRIGOS FIN PAGINA 2*/
