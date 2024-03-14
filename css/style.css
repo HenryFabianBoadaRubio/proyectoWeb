@@ -6,6 +6,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     
@@ -13,7 +14,7 @@ body{
     width: 100%;
     height: 100vh;
     grid-template-columns: 1fr 4fr;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-color: #1a1a1a;
     flex-direction: row;
 }
@@ -23,8 +24,9 @@ body{
     width: 100%;
     height: 100vh;
     flex-direction: column;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-family: "Handlee";
+    
    
     
 }
@@ -37,22 +39,51 @@ body{
     font-family: "Protest Revolution";
     font-size: 2rem;
     
+
+    /*anima*/
+    text-shadow: 0 0 20px #fff, 0 0 40px #ff8c00, 0 0 60px #ff8c00, 0 0 80px #ff8c00, 0 0 100px #ff8c00;
+    animation: glow 1.5s ease-in-out infinite alternate;
 }
+@keyframes glow-orange {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff8c00, 0 0 30px #ff8c00, 0 0 40px #ff8c00, 0 0 50px #ff8c00;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 40px #ff8c00, 0 0 60px #ff8c00, 0 0 80px #ff8c00, 0 0 100px #ff8c00;
+    }
+}
+
 .pagina1__aside__1{
     margin-top: 2rem;
     display: flex;
     height: 50%;
     align-items: center;
-    line-height: 4.5rem;    
+    line-height: 3.5rem;    
     flex-direction: column;
-    font-size: 1.5rem;
-    border: 1px solid rgb(217, 255, 0);
+    font-size: 1.3rem;
+    /* border: 1px solid rgb(217, 255, 0); */
     align-items: baseline;
-    margin-left: 4rem;
+    margin-left: 2rem;
 
 }
+.pagina1__aside__1 a:hover{
+    color: orangered;
+    scale: 1.1;
+    /* text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 10px #00f, 0 0 10px #00f, 0 0 30px #00f, 0 0 50px #00f, 0 0 50px #00f;  */
+}
+.pagina1__aside__1 svg{
+    font-size: 1px;
+    /* border: 1px solid rgb(217, 255, 0); */
+    width: 2.8rem;
+    height: 2.8rem;
+    
+}
+.pagina1__aside__1 svg:hover{
+    stroke: rgb(255, 153, 0);
+    fill: rgb(255, 153, 0);
+}
 .pagina1__aside__1 i{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .pagina1__aside__2 .elemento,
 .pagina1__aside__1 .elemento{
@@ -68,14 +99,26 @@ body{
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-size: 1.5rem;
     align-items: baseline;
-    margin-left: 4rem;
+    margin-left: 2rem;
 }
-.pagina1__aside__2 i{
-    font-size: 2.5rem;
+.pagina1__aside__2 a:hover{
+    scale: 1.1;
+    color: orangered;
+    /* text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 40px #00f, 0 0 70px #00f, 0 0 80px #00f, 0 0 100px #00f, 0 0 150px #00f;  */
+
+
+}
+.pagina1__aside__2 svg{
+    width: 2rem;
+    height: 2rem;
     
+}
+.pagina1__aside__2 svg:hover{
+    fill: rgb(255, 153, 0);
+    stroke: rgb(255, 153, 0);
 }
 .pagina1__aside__2 p{
     display: flex;
@@ -83,7 +126,7 @@ body{
     color: white;
     justify-content: center;
     
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 /*FIN ASIDE PAGINA 1*/
@@ -95,19 +138,21 @@ body{
     margin-top: 2rem;
     margin-left: 2rem;
     width: 95%;
-    height: 85%;
+    height: 90%;
     color: white;
-    border: 1px solid red;
-    
+    /* border: 1px solid red; */
+    box-shadow: 0 0 10px #fafafa, 0 0 20px #fafafa, 0 0 30px #fafafa, 0 0 30px #fafafa;
     background-color:#333333;
+    font-family: "Handlee";
+    border-radius: 30px;
 
     flex-direction: column;
-    border-radius: 20px;
+    
 }
 .container h2{
-    border: 1px solid rgb(255, 251, 0);
+    /* border: 1px solid rgb(255, 251, 0); */
     font-family: "Handlee";
-    font-size: 3rem;
+    font-size: 2rem;
 
     margin: 10px;
 }
@@ -116,15 +161,14 @@ body{
     
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-auto-rows: 25rem;
+    grid-auto-rows: 18.5rem;
     max-height: 85vh;
     padding: 1rem;
     gap: 20px;
     overflow-y: auto;
-    border: 1px solid rgb(255, 251, 0);
+    /* border: 1px solid rgb(255, 251, 0); */
     background-color:#333333;
 
-    
     position: relative;
     
 }
@@ -132,7 +176,8 @@ body{
     display: flex;
     
     
-    border-radius: 20px;
+   border-top-left-radius: 40px;
+   border-bottom-right-radius: 40px;
     background-color: aliceblue;
 }
 .main__elemento img{
@@ -143,7 +188,7 @@ body{
     max-width:100% ;
     max-height: 100%;
     flex-direction: column;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .main__elemento__prenda img{
     width: 100%;
@@ -155,24 +200,36 @@ body{
 .main__elemento__text{
     display: flex;
     width: 100%;
-    height: 20%;
+    height: 27%;
     color: black;
     flex-direction: column;
-    border: 1px solid yellow;
-    gap: 1rem;
+    /* border: 1px solid yellow; */
+    background-color: #615e4c;
+    border-bottom-right-radius: 40px;
+    gap: 0.5rem;
     box-sizing: border-box;
     padding: 10px;
     position: relative;
 }
 .main__elemento__text button{
     position: absolute;
-    width:6rem;
-    height: 2rem;
+    width:5rem;
+    height: 1.5rem;
     right: 1rem;
-    bottom: 1rem;
-    border: 1px solid red;
-
-    
+    bottom: 0.5rem;
+    font-family: "Handlee";
+    font-weight: 900;
+    border:none;
+    background-color: #464748;
+    border-bottom-right-radius: 20px;
+    /* border: 1px solid red; */
+    border: 1px solid white;
+}
+.main__elemento__text button:hover{
+    background-color: #90A4AE;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    box-shadow: 0px 0px 20px orangered;  
 }
 /*configuracion fin caja de precio item y compra*/
 /*FIN MAIN PAGINA 1*/
