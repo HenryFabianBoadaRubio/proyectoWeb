@@ -426,7 +426,7 @@ body{
     height: 100%;
     color: black;
     flex-direction: row;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     background-color: #615e4c;
     border-bottom-right-radius: 40px;
     gap: 0.5rem;
@@ -481,7 +481,7 @@ body{
     /* border: 1px solid rebeccapur ple; */
     
 }
-.opciones__compra__vaciar button{
+.opciones__compra__vaciar {
     display: flex;
     width: 8rem;
     align-items: center;
@@ -492,6 +492,17 @@ body{
     font-weight: 900;
     background-color: #464748;;
     border: 1px solid white;
+    /* border: 1px solid rgb(179, 255, 0); */
+
+}
+.opciones__compra__vaciar a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    width: 8rem;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
     /* border: 1px solid rgb(179, 255, 0); */
 
 }
@@ -542,7 +553,7 @@ body{
 
 }
 .opciones__compra__ahora button:hover,
-.opciones__compra__vaciar button:hover{
+.opciones__compra__vaciar a:hover{
     background-color: #90A4AE;
     color: rgb(0, 0, 0);
     cursor: pointer;
