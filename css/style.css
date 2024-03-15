@@ -321,7 +321,7 @@ body{
 .container__lleno{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3.5rem 13rem 13rem 13rem 3.5rem;
+    grid-template-rows: 3.5rem 5rem 5rem 5rem ;
     margin-top: 2rem;
     margin-left: 2rem;
     width: 95%;
@@ -333,7 +333,6 @@ body{
     font-family: "Handlee";
     border-radius: 30px;
     padding: 15px;
-    gap: 10px;
     
    flex-direction: row;
     
@@ -347,32 +346,29 @@ body{
 }
 .pagina1__main__lleno{
     display: grid;
-    height: 2rem;
+    height: 24.2rem;
     grid-auto-rows: 15rem;
     padding: 1rem;
-    gap: 15px;
     
-    border: 1px solid rgb(255, 251, 0);
+    /* border: 1px solid rgb(255, 251, 0); */
     background-color:#333333;
-    
     overflow-y: auto;
-    
     position: relative;
-    
 }
 .main__elemento__lleno{
     display: flex;
     position: relative;
-    
-    box-shadow: 3px 3px 5px rgb(255, 0, 191);
+    /* border: 1px solid rgb(255, 251, 0); */
+    height: 12rem;
+   
+    box-shadow: 3px 3px 5px orange;
+
     border-top-left-radius: 40px;
     border-bottom-right-radius: 40px;
     background-color: aliceblue;
 }
 .main__elemento__lleno img{
     border-top-left-radius: 20px;
-    
-    box-shadow: 3px 3px 5px rgb(255, 0, 191);
 
 }
 /* .main__elemento__prenda__lleno{
@@ -390,7 +386,7 @@ body{
 .main__elemento__prenda__lleno .ropa__lleno{
     display:flex;
     position: absolute;
-    width: 15rem; 
+    width: 12rem; 
     /* border: 1px solid rgb(9, 255, 0);  */
 
     
@@ -426,7 +422,7 @@ body{
 /*configuracion caja de precio item y compra*/
 .main__elemento__text__lleno{
     display: flex;
-    width:41rem;
+    width:44rem;
     height: 100%;
     color: black;
     flex-direction: row;
@@ -437,9 +433,22 @@ body{
     box-sizing: border-box;
     padding: 10px;
     right: 0;
+    justify-content: space-between;
     position: absolute;
+    align-items: center;
+    font-weight: 900;
+    line-height: 2rem;
+    font-size: 1.5rem;
     
 }
+.main__elemento__text__lleno i{
+    font-size: 3rem;
+
+}
+.main__elemento__text__lleno input{
+    height: 1.5rem;
+}
+
 .main__elemento__text__lleno button{
     position: absolute;
     width:5rem;
@@ -468,8 +477,8 @@ body{
     position: absolute;
     align-items: center;
     justify-content: space-between;
-    bottom: 2rem;
-    border: 1px solid rebeccapurple;
+    bottom: 1rem;
+    /* border: 1px solid rebeccapur ple; */
     
 }
 .opciones__compra__vaciar button{
@@ -483,16 +492,19 @@ body{
     font-weight: 900;
     background-color: #464748;;
     border: 1px solid white;
+    /* border: 1px solid rgb(179, 255, 0); */
+
 }
 .opciones__compra__ahora{
     display: flex;
-    width: 14rem;
+    width: 15rem;
     height: 4rem;
-    border: 1px solid rgb(179, 255, 0);
+    /* border: 1px solid rgb(179, 255, 0); */
     justify-content: space-between;
     align-items: center;
     border-radius: 15px;
     background-color:  #615e4c;
+    
     
     
 }
@@ -503,7 +515,7 @@ body{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     gap: 5px;
 }
 
@@ -524,9 +536,17 @@ body{
     font-weight: 900;
     border: 1px solid white;
     background-color: #464748;
-    
+    /* border: 1px solid red; */
+    margin-right: 5px;
     color: black;
 
+}
+.opciones__compra__ahora button:hover,
+.opciones__compra__vaciar button:hover{
+    background-color: #90A4AE;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    box-shadow: 0px 0px 20px orangered;  
 }
 
 /*Carrito lleno fin*/
