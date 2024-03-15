@@ -564,16 +564,46 @@ body{
 
 
 
-@media(width<800px)
-{
-    .pagina1{
-        width: 100%;
-        height: 100vh;
-        flex-direction: column;
-        /* border: 1px solid red; */
-        font-family: "Handlee";
+@media(width<800px){
+
+        body{
+            grid-template-columns: 1fr;
+        }
         
-       
+   
+    .pagina1__index{
+        border: 1px solid red;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin: 10PX;
+    }
+    .index__elemento__prenda, .index__elemento__text{
+        
+        padding: 2%;
+    }
+    .container{
+        width: 80%;
+    }
+    .index__elemento{
+        justify-content: center;
+    }
+    .pagina1__aside__1{
+        width: 70%;
+    }
+    .container__lleno{
+        width: 95%;
+
+    }
+    .index__elemento__lleno{
+        display: flex;
+        object-fit: scale-down;
+        width: 95%;
+        height: 10rem;
+    }
+    .index__elemento__text__lleno{
+        grid-gap: 0;
+        grid-template-rows: 60px 1fr 1fr 1fr 1fr;
         
     }
+    
 }
