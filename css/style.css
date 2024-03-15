@@ -18,6 +18,7 @@ body{
 /*Header pagina 1 */
 .encabezado{
     display: flex;
+    width: 95%;
     height: 10vh;
     justify-content: space-between;
     align-items: center;
@@ -35,21 +36,28 @@ body{
     /* border: 1px solid red; */
 }
 
-.encabezado__menu{
+
+.menu {
+    list-style: none;
     display: flex;
-    width: 43%;
+    width: 41%;
     /* border: 1px solid red; */
     font-family: 'Poppins', sans-serif;
     justify-content: space-around;
-    margin-right: 2rem;
+    font-weight: 600;
+    position: absolute;
+    margin-top: -1rem;
+    
 }
-.encabezado__menu a{
+.menu a{
+    display: flex;
+    width: 100%;
     color: var(--color-white);
     text-decoration: none;
     font-size: 1.3rem;
     /* border: 1px solid red; */
 }
-.encabezado__menu a:hover{
+.menu a:hover{
     color: var(--color-primary);
 }
 /*fin Header pagina 1  */
@@ -222,6 +230,15 @@ body{
     height: 70%;
     
 }
+.img__elemento i{
+    position: absolute;
+    font-size: 2.5rem;
+    right: 5px;
+    top: 5px;
+    border-radius: 10px;
+    background-color: var(--color-primary);
+    cursor: pointer;
+}
 .pagina3__img .img__elemento:hover{
     scale: 1.1;
 }
@@ -232,6 +249,7 @@ body{
     width: 23%;
     height: 80%;
     background-color: var(--color-beige);
+    position: relative;
     /* border: 1px solid rgb(255, 0, 234); */
     
 }
@@ -481,7 +499,7 @@ body{
   /*PAGINA 1 INICIO*/
     .textopagina1{
         width: 99%;
-        height: 90vh;
+        height: 70vh;
         align-items: center;
         flex-direction: column;
         margin-left: 0;
@@ -606,6 +624,7 @@ body{
     }
     
     .pagina3__img{
+        margin-top: 2rem;
         display: flex;
         /* border: 1px solid rgb(17, 0, 255); */
         justify-content: center;
@@ -794,8 +813,8 @@ body{
     /*Comienzo footer*/
     .pagina6{
         display: flex;
-        width: 100%;
-        height: 140vh;
+        width: 99%;
+        height: 100vh;
         /* border: 1px solid red; */
         align-items: center;
         justify-content: flex-start;
@@ -850,7 +869,74 @@ body{
     
 
     /*Find footer*/
+    /*hamburguesa comienzo*/
+    .menu{
+        display: none;
+        margin: 0 auto;
+        margin-top: 1rem; 
+        margin-left: 0px;
+        justify-content: center;
+        font-size: 4rem;
+        align-items: center;
+        color: var(--color-primary);
+        gap: 30px;
+        height: 100px;
+        font-size: 20px;
+        text-decoration: none;
+        list-style: none;
+    }
 
+    .toggle{
+        width: 2.5rem;
+        height: 2.5rem;
+        display: block;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-right: 2rem;
+        margin-top: 0.3rem;
+        justify-content: center;
+        cursor: pointer;
+        background: url(../storage/img/menu.svg);
+        background-size: 3rem;
+        z-index: 11;
+        
+    }
+
+    .toggle.active{
+        position: fixed;
+        width: 2rem;
+        margin-left: 20rem;
+        background: url(../storage/img/close.svg);
+        background-size: 2.5rem;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .menu {
+      display:none;
+    }
+
+    .menu.active
+    {
+        position: fixed;
+        background: var(--color-tercer);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 2svh;
+        padding-bottom: 2svh;
+        row-gap: 1.5em;
+        font-size: 1.2em;
+        z-index: 10;
+    }
 }
+    /*fin hamburguesa*/
+
+
 
 /*RESPONSIVE FINAL*/
