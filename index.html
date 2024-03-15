@@ -13,13 +13,16 @@
             <div class="encabezado__titulo">
                 <h1>Foods</h1>
             </div>
-            <div class="encabezado__menu">
-                <a class="Menu" href="">Home</a>
-                <a class="Menu" href="">About</a>
-                <a class="Menu" href="">Menu</a>
-                <a class="Menu" href="">Service</a>
-                <a class="Menu" href="">Contact</a>
-            </div>
+                <nav>
+                    <ul class="menu">
+                        <li><a class="Menu" href="">Home</a></li>
+                        <li><a class="Menu" href="">About</a></li>
+                        <li><a class="Menu" href="">Menu</a></li>
+                        <li><a class="Menu" href="">Service</a></li>
+                        <li><a class="Menu" href="">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="toggle" onclick="toggleMenu()"></div>
         </article>
     </header>
     <main>
@@ -54,6 +57,7 @@
             </div>
             <div  class="pagina3__img">
                 <div class="img__elemento">
+                    <i class='bx bx-cart-download'></i>
                     <img src="storage/img/food1.png" >
                     <h4>Chicken Burger</h4>
                     <small>Tasty Food</small>
@@ -61,12 +65,14 @@
 
                 </div>
                 <div class="img__elemento">
+                    <i class='bx bx-cart-download'></i>
                     <img src="storage/img/food2.png">
                     <h4>Special Beef Burger</h4>
                     <small>Tasty Food</small>
                     <p>$11.00</p>
                 </div>
                 <div class="img__elemento">
+                    <i class='bx bx-cart-download'></i>
                     <img src="storage/img/food3.png" >
                     <h4>Chicken Fry Pack</h4>
                     <small>Tasty Food</small>
@@ -146,5 +152,6 @@
             </section>
         </footer>    
     </main>
+    <script src="js/main.js"></script>
     </body>
 </html>
