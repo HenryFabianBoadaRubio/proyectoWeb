@@ -572,7 +572,7 @@ body{
         
    
     .pagina1__index{
-        border: 1px solid red;
+        /* border: 1px solid red; */
         grid-template-columns: 1fr;
         justify-content: center;
         margin: 10PX;
